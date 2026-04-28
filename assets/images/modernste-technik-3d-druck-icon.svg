@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="3D Druck Icon">
+  <title>3D Druck Icon</title>
+  <g fill="#7B3FC6">
+    <!-- printer head -->
+    <rect x="44" y="12" width="40" height="24" rx="5"/>
+    <circle cx="64" cy="24" r="5" fill="#ffffff"/>
+    <rect x="57" y="34" width="14" height="12" rx="2"/>
+
+    <!-- printer frame -->
+    <path d="M26 42h76c6 0 10 4 10 10v30H16V52c0-6 4-10 10-10zm2 10v20h72V52H28z"/>
+
+    <!-- build plate -->
+    <rect x="22" y="84" width="84" height="12" rx="4"/>
+    <rect x="30" y="98" width="68" height="10" rx="3"/>
+
+    <!-- printed object / cube -->
+    <path d="M53 61l11-6 11 6v14l-11 6-11-6V61zm11 0l-6 3 6 3 6-3-6-3zm-7 9v3l7 4v-7l-7-4zm14-4l-7 4v7l7-4v-7z" fill="#ffffff"/>
+
+    <!-- filament / decorative lines -->
+    <path d="M36 58c10 0 11 11 20 11" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M92 58c-10 0-11 11-20 11" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
