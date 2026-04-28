@@ -83,8 +83,9 @@ a {
 	object-fit: contain;
 }
 
-.wyrd-logo strong {
+.wyrd-logo .wp-block-site-title {
 	display: block;
+	margin: 0;
 	font-family: 'Fredoka', sans-serif;
 	font-size: 30px;
 	line-height: 0.9;
@@ -277,8 +278,8 @@ a {
 }
 
 .wyrd-mini-benefits img {
-	width: 18px;
-	height: 18px;
+	width: 30px;
+	height: 30px;
 	object-fit: contain;
 }
 
@@ -727,7 +728,7 @@ footer .wp-block-column p {
 		height: 40px;
 	}
 
-	.wyrd-logo strong {
+	.wyrd-logo .wp-block-site-title {
 		font-size: 24px;
 	}
 

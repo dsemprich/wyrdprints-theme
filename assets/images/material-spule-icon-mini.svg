@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Material Spule Icon">
+  <title>Material Spule</title>
+  <g fill="#5263C8">
+    <ellipse cx="64" cy="28" rx="28" ry="10"/>
+    <rect x="36" y="28" width="56" height="48" rx="10"/>
+    <ellipse cx="64" cy="76" rx="28" ry="10"/>
+    <rect x="50" y="36" width="4" height="32" fill="#ffffff"/>
+    <rect x="60" y="36" width="4" height="32" fill="#ffffff"/>
+    <rect x="70" y="36" width="4" height="32" fill="#ffffff"/>
+    <path d="M92 40c12 0 12 24 0 24" fill="none" stroke="#5263C8" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
