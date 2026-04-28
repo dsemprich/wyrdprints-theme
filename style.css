@@ -55,8 +55,8 @@ a {
 	position: sticky;
 	top: 0;
 	z-index: 60;
-	padding: 14px 24px;
-	background: rgba(255, 252, 247, 0.94);
+	padding: 9px 24px;
+	background: var(--wyrd-bg);
 	backdrop-filter: blur(12px);
 	border-bottom: 1px solid rgba(24, 25, 51, 0.06);
 }
@@ -78,15 +78,15 @@ a {
 }
 
 .wyrd-logo img {
-	width: 56px;
-	height: 56px;
+	width: 50px;
+	height: 50px;
 	object-fit: contain;
 }
 
 .wyrd-logo strong {
 	display: block;
 	font-family: 'Fredoka', sans-serif;
-	font-size: 33px;
+	font-size: 30px;
 	line-height: 0.9;
 	text-transform: uppercase;
 }
@@ -162,7 +162,7 @@ a {
 /* Hero */
 .wyrd-hero {
 	position: relative;
-	padding: 42px 24px 116px;
+	padding: 26px 24px 86px;
 	background: var(--wyrd-bg);
 	overflow: hidden;
 }
@@ -182,7 +182,7 @@ a {
 .wyrd-hero-shell {
 	position: relative;
 	z-index: 1;
-	min-height: clamp(440px, 56vw, 720px);
+	min-height: clamp(360px, 48vw, 620px);
 	display: flex;
 	align-items: center;
 }
@@ -394,14 +394,11 @@ a {
 .wyrd-feature-card::after {
 	content: '';
 	position: absolute;
-	right: -10px;
-	bottom: -10px;
-	width: 44%;
-	height: 88%;
+	inset: 0;
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: bottom right;
-	opacity: 0.96;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.42;
 	pointer-events: none;
 }
 
@@ -666,6 +663,10 @@ footer .wp-block-column p {
 }
 
 @media (max-width: 1050px) {
+	.wyrd-header {
+		padding: 8px 18px;
+	}
+
 	.wyrd-header-inner {
 		flex-wrap: wrap;
 	}
@@ -676,7 +677,7 @@ footer .wp-block-column p {
 	}
 
 	.wyrd-hero-shell {
-		min-height: clamp(380px, 64vw, 590px);
+		min-height: clamp(320px, 56vw, 500px);
 	}
 
 	.wyrd-splash {
@@ -718,16 +719,16 @@ footer .wp-block-column p {
 
 @media (max-width: 782px) {
 	.wyrd-header {
-		padding: 12px 14px;
+		padding: 8px 14px;
 	}
 
 	.wyrd-logo img {
-		width: 45px;
-		height: 45px;
+		width: 40px;
+		height: 40px;
 	}
 
 	.wyrd-logo strong {
-		font-size: 27px;
+		font-size: 24px;
 	}
 
 	.wyrd-logo small {
@@ -742,8 +743,8 @@ footer .wp-block-column p {
 	}
 
 	.wyrd-hero {
-		padding-top: 24px;
-		padding-bottom: 92px;
+		padding-top: 14px;
+		padding-bottom: 72px;
 	}
 
 	.wyrd-hero::before {
@@ -753,7 +754,7 @@ footer .wp-block-column p {
 	}
 
 	.wyrd-hero-shell {
-		min-height: clamp(310px, 86vw, 500px);
+		min-height: clamp(250px, 70vw, 400px);
 	}
 
 	.wyrd-hero-overlay {
