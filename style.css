@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;900&display=swap');
+
 .wyrd-hero {
 	position: relative;
 	padding: 56px 24px 90px;
@@ -56,6 +59,39 @@
 	font-weight: 900;
 	text-transform: uppercase;
 }
+
+
+
+.wyrd-hero {
+	position: relative;
+	padding: 80px 24px 120px;
+	background:
+		url("/wp-content/themes/wyrdprints-theme/assets/images/hero-dragon.png")
+		no-repeat right center;
+	background-size: contain;
+	background-color: #FFF6E9;
+}
+
+.wyrd-hero-overlay {
+	max-width: 560px;
+}
+
+.wyrd-hero h1 {
+	font-size: clamp(48px, 6vw, 80px);
+	line-height: 0.95;
+}
+
+.wyrd-hero h1 mark {
+	color: #7B3FF2;
+	background: none;
+}
+
+.wyrd-hero-text {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
 
 .wyrd-hero-image {
 	position: relative;
@@ -380,53 +416,19 @@
 	}
 }
 
-.wyrd-floating-card {
-	position: absolute;
-	background: white;
-	border-radius: 20px;
-	padding: 14px 18px;
-	box-shadow: 0 16px 38px rgba(23, 23, 47, 0.14);
-	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 10px;
-	align-items: center;
-	z-index: 4;
+.wyrd-hero {
+	position: relative;
+	padding: 80px 24px 120px;
+
+	background:
+		url("/wp-content/themes/wyrdprints-theme/assets/images/hero-dragon.png")
+		no-repeat right center;
+
+	background-size: contain;
+	background-color: #FFF6E9;
 }
 
-.wyrd-floating-card span {
-	font-size: 28px;
-	grid-row: span 2;
+.wyrd-hero-content {
+	max-width: 560px;
 }
 
-.wyrd-floating-card strong {
-	font-size: 14px;
-	line-height: 1.1;
-	color: #17172F;
-}
-
-.wyrd-floating-card small {
-	font-size: 12px;
-	font-weight: 800;
-	color: rgba(23, 23, 47, 0.62);
-}
-
-.wyrd-card-top {
-	left: 2%;
-	top: 12%;
-}
-
-.wyrd-card-bottom {
-	right: 8%;
-	bottom: 2%;
-}
-
-@media (max-width: 782px) {
-	.wyrd-floating-card {
-		position: relative;
-		left: auto;
-		right: auto;
-		top: auto;
-		bottom: auto;
-		margin-top: 12px;
-	}
-}
