@@ -216,7 +216,15 @@ a {
 
 .wyrd-buttons {
 	margin-top: 26px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 	gap: 14px;
+}
+
+.wyrd-buttons .wp-block-button {
+	margin: 0;
+	flex: 0 0 auto;
 }
 
 .wyrd-buttons .wp-block-button__link {
@@ -301,6 +309,7 @@ a {
 	position: relative;
 	z-index: 4;
 	margin-top: -70px;
+	padding: 0 24px;
 }
 
 .wyrd-categories {
@@ -342,7 +351,7 @@ a {
 
 .wyrd-categories span {
 	font-family: 'Fredoka', sans-serif;
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 700;
 	line-height: 0.96;
 	text-transform: uppercase;
@@ -772,6 +781,10 @@ footer .wp-block-column p {
 
 	.wyrd-mini-benefits {
 		grid-template-columns: 1fr;
+	}
+
+	.wyrd-buttons {
+		flex-wrap: wrap;
 	}
 
 	.wyrd-splash {
