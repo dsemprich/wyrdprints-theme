@@ -324,7 +324,7 @@ a {
 }
 
 .wyrd-categories a {
-	min-height: 120px;
+	min-height: 100px;
 	padding: 18px 10px;
 	display: flex;
 	flex-direction: column;
@@ -353,7 +353,7 @@ a {
 
 .wyrd-categories span {
 	font-family: 'Fredoka', sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 0.96;
 	text-transform: uppercase;
@@ -648,12 +648,11 @@ footer .wp-block-column p {
 		font-size: 24px;
 	}
 
-	.wyrd-categories span,
 	.wyrd-feature-card h2,
 	.wyrd-section-head h2,
 	.wyrd-news-content .wp-block-post-title,
 	.wyrd-benefits strong {
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.wyrd-benefits span,
