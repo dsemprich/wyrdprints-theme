@@ -1009,3 +1009,79 @@ footer .wp-block-column p {
 		font-size: 14px;
 	}
 }
+
+
+/** bestellungen */
+.wyrd-order-hero {
+	background: linear-gradient(135deg,#7B3FF2,#FF9F1C);
+	color: white;
+	padding: 70px 24px;
+	text-align: center;
+}
+
+.wyrd-order-hero h1 {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+.wyrd-order-steps {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 16px;
+	margin: 30px auto;
+}
+
+.step {
+	background: white;
+	padding: 16px;
+	border-radius: 18px;
+	text-align: center;
+	font-weight: 800;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.wyrd-form-card {
+	background: white;
+	padding: 28px;
+	border-radius: 24px;
+	box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+}
+
+.wyrd-info-card {
+	background: #FFF6E9;
+	padding: 24px;
+	border-radius: 24px;
+	font-weight: 600;
+}
+
+.wyrd-order-cta {
+	text-align: center;
+	padding: 60px 24px;
+	background: #17172F;
+	color: white;
+}
+
+.wyrd-order-cta a {
+	display: inline-block;
+	margin-top: 16px;
+	background: #7B3FF2;
+	color: white;
+	padding: 14px 22px;
+	border-radius: 12px;
+	text-decoration: none;
+	font-weight: 800;
+}
+
+.wyrd-order-hero,
+.wyrd-order-steps,
+.wyrd-order-columns,
+.wyrd-order-cta {
+	padding-left: clamp(16px, 5vw, 80px);
+	padding-right: clamp(16px, 5vw, 80px);
+}
+
+@media (max-width: 768px) {
+	.wyrd-order-steps {
+		grid-template-columns: 1fr 1fr;
+	}
+}
