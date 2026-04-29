@@ -163,7 +163,7 @@ a {
 /* Hero */
 .wyrd-hero {
 	position: relative;
-	padding: 26px 24px 86px;
+	padding: 12px 24px 72px;
 	background: var(--wyrd-bg);
 	overflow: hidden;
 }
@@ -281,6 +281,7 @@ a {
 	width: 30px;
 	height: 30px;
 	object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(26%) sepia(92%) saturate(2417%) hue-rotate(248deg) brightness(96%) contrast(97%);
 }
 
 .wyrd-splash {
@@ -309,7 +310,7 @@ a {
 .wyrd-category-wrap {
 	position: relative;
 	z-index: 4;
-	margin-top: -70px;
+	margin-top: -85px;
 	padding: 0 24px;
 }
 
@@ -323,7 +324,7 @@ a {
 }
 
 .wyrd-categories a {
-	min-height: 148px;
+	min-height: 120px;
 	padding: 18px 10px;
 	display: flex;
 	flex-direction: column;
@@ -345,14 +346,14 @@ a {
 }
 
 .wyrd-categories img {
-	width: 72px;
-	height: 72px;
+	width: 62px;
+	height: 62px;
 	object-fit: contain;
 }
 
 .wyrd-categories span {
 	font-family: 'Fredoka', sans-serif;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 700;
 	line-height: 0.96;
 	text-transform: uppercase;
@@ -373,7 +374,7 @@ a {
 
 .wyrd-feature-card {
 	position: relative;
-	min-height: 320px;
+	min-height: 260px;
 	padding: 28px;
 	border-radius: var(--wyrd-radius-xl);
 	box-shadow: var(--wyrd-shadow-card);
