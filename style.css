@@ -568,6 +568,7 @@ a {
 }
 
 .wyrd-benefits {
+	--wyrd-benefit-icon-size: 36px;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	background: #fff;
@@ -579,9 +580,13 @@ a {
 
 .wyrd-benefits > div {
 	padding: 22px 18px;
-	display: flex;
-	align-items: flex-start;
-	gap: 10px;
+	display: grid;
+	grid-template-columns: var(--wyrd-benefit-icon-size) minmax(0, 1fr);
+	grid-template-rows: auto auto;
+	column-gap: 10px;
+	row-gap: 4px;
+	align-items: start;
+	min-width: 0;
 	border-right: 1px solid rgba(24, 25, 51, 0.07);
 }
 
@@ -590,14 +595,18 @@ a {
 }
 
 .wyrd-benefits img {
-	width: 33px;
-	height: 33px;
+	grid-column: 1;
+	grid-row: 1 / span 2;
+	width: var(--wyrd-benefit-icon-size);
+	height: var(--wyrd-benefit-icon-size);
 	object-fit: contain;
-	margin-top: 2px;
+	margin-top: 1px;
 	flex-shrink: 0;
 }
 
 .wyrd-benefits strong {
+	grid-column: 2;
+	grid-row: 1;
 	display: block;
 	font-family: 'Fredoka', sans-serif;
 	font-size: 25px;
@@ -607,12 +616,15 @@ a {
 }
 
 .wyrd-benefits span {
+	grid-column: 2;
+	grid-row: 2;
 	display: block;
-	margin-top: 4px;
+	margin-top: 0;
 	font-size: 18px;
 	line-height: 1.2;
 	font-weight: 700;
 	color: #535a79;
+	overflow-wrap: anywhere;
 }
 
 /* Footer polish without markup changes */
@@ -663,6 +675,45 @@ footer .wp-block-column p {
 	}
 }
 
+@media (min-width: 1080px) and (max-width: 1240px) {
+	.wyrd-benefits {
+		--wyrd-benefit-icon-size: 48px;
+	}
+
+	.wyrd-benefits > div {
+		padding: 18px 12px;
+		grid-template-columns: var(--wyrd-benefit-icon-size) minmax(0, 1fr);
+		column-gap: 8px;
+		row-gap: 3px;
+	}
+
+	.wyrd-benefits img {
+		width: var(--wyrd-benefit-icon-size);
+		height: var(--wyrd-benefit-icon-size);
+		margin-top: 1px;
+	}
+
+	.wyrd-benefits strong {
+		font-size: 16px;
+		line-height: 1.15;
+	}
+
+	.wyrd-benefits span {
+		font-size: 14px;
+		line-height: 1.15;
+	}
+}
+
+@media (max-width: 1079px) {
+	.wyrd-benefits {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.wyrd-benefits > div:nth-child(2n) {
+		border-right: 0;
+	}
+}
+
 @media (max-width: 1050px) {
 	.wyrd-header {
 		padding: 8px 18px;
@@ -709,13 +760,6 @@ footer .wp-block-column p {
 		flex-basis: 100% !important;
 	}
 
-	.wyrd-benefits {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-
-	.wyrd-benefits > div:nth-child(2n) {
-		border-right: 0;
-	}
 }
 
 @media (max-width: 782px) {
