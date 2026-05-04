@@ -2094,3 +2094,92 @@ body.page-id-XX .wyrd-news-card {
 		grid-template-columns: 1fr !important;
 	}
 }
+
+/* Shared page hero style (all pages except start page) */
+:is(
+	.wyrd-order-hero,
+	.wyrd-team-hero,
+	.wyrd-store-hero,
+	.wyrd-contact-hero,
+	.wyrd-faq-hero,
+	.wyrd-gallery-hero,
+	.wyrd-about-hero
+) {
+	padding: clamp(34px, 5vw, 54px) clamp(16px, 4vw, 26px) clamp(28px, 4.2vw, 44px);
+	background:
+		linear-gradient(135deg, rgba(123, 66, 242, .22) 0%, rgba(255, 156, 26, .2) 45%, rgba(126, 200, 67, .18) 100%),
+		radial-gradient(circle at 88% 18%, rgba(123, 66, 242, .28), transparent 36%),
+		radial-gradient(circle at 12% 84%, rgba(242, 122, 0, .22), transparent 38%),
+		#fff3e2;
+	color: #17172F;
+}
+
+:is(
+	.wyrd-order-hero,
+	.wyrd-team-hero,
+	.wyrd-store-hero,
+	.wyrd-contact-hero,
+	.wyrd-faq-hero,
+	.wyrd-gallery-hero,
+	.wyrd-about-hero
+) h1 {
+	margin: 0;
+	max-width: 18ch;
+	font-size: clamp(34px, 5.6vw, 56px);
+	line-height: .94;
+}
+
+:is(
+	.wyrd-order-hero,
+	.wyrd-team-hero,
+	.wyrd-store-hero,
+	.wyrd-contact-hero,
+	.wyrd-faq-hero,
+	.wyrd-gallery-hero,
+	.wyrd-about-hero
+) p {
+	margin-top: 10px;
+	max-width: 62ch;
+	font-size: clamp(17px, 2.6vw, 21px);
+	font-weight: 700;
+}
+
+@media (max-width: 782px) {
+	:is(
+		.wyrd-order-hero,
+		.wyrd-team-hero,
+		.wyrd-store-hero,
+		.wyrd-contact-hero,
+		.wyrd-faq-hero,
+		.wyrd-gallery-hero,
+		.wyrd-about-hero
+	) {
+		padding: 26px 14px 22px;
+	}
+
+	:is(
+		.wyrd-order-hero,
+		.wyrd-team-hero,
+		.wyrd-store-hero,
+		.wyrd-contact-hero,
+		.wyrd-faq-hero,
+		.wyrd-gallery-hero,
+		.wyrd-about-hero
+	) h1 {
+		font-size: clamp(30px, 8.2vw, 40px);
+		line-height: .96;
+	}
+
+	:is(
+		.wyrd-order-hero,
+		.wyrd-team-hero,
+		.wyrd-store-hero,
+		.wyrd-contact-hero,
+		.wyrd-faq-hero,
+		.wyrd-gallery-hero,
+		.wyrd-about-hero
+	) p {
+		font-size: 17px;
+		margin-top: 8px;
+	}
+}
