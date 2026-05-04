@@ -1,0 +1,42 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"className":"wyrd-gallery-hero","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wyrd-gallery-hero">
+	<div class="alignwide">
+		<p class="wyrd-kicker">Unsere Drucke</p>
+		<h1>Galerie der 3D Drucke 🐉</h1>
+		<p>Entdecke Drachen, Figuren, Büsten, Terrain, Deko und Sonderanfertigungen aus unserer Werkstatt.</p>
+	</div>
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"wyrd-gallery-section","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wyrd-gallery-section">
+
+	<div class="wyrd-gallery-layout alignwide">
+
+		<aside class="wyrd-gallery-filter">
+            <h3>Filter</h3>
+
+            <!-- wp:shortcode -->
+            [woof]
+            <!-- /wp:shortcode -->
+        </aside>
+
+        <main class="wyrd-gallery-products">
+            <div class="wyrd-gallery-head">
+                <h2>Alle Drucke</h2>
+                <p>Wähle links eine Kategorie aus.</p>
+            </div>
+
+            <!-- wp:shortcode -->
+            [products limit="12" columns="6" paginate="true"]
+            <!-- /wp:shortcode -->
+        </main>
+
+	</div>
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
