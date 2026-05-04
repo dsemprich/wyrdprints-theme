@@ -1712,6 +1712,26 @@ footer .wp-block-column p {
 	}
 }
 
+@media (max-width: 782px) {
+	.wyrd-gallery-section .woocommerce ul.products {
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 16px;
+		padding: 0 !important;
+		margin: 0 !important;
+		list-style: none;
+		justify-items: center;
+	}
+
+	.wyrd-gallery-section .woocommerce ul.products li.product {
+		width: 100% !important;
+		max-width: 420px;
+		box-sizing: border-box;
+		float: none !important;
+		margin: 0 auto !important;
+	}
+}
+
 /* Galerie: Warenkorb-Buttons ausblenden */
 .wyrd-gallery-section .woocommerce ul.products li.product .button,
 .wyrd-gallery-section .woocommerce ul.products li.product .add_to_cart_button,
