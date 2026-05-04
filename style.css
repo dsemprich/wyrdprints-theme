@@ -1507,6 +1507,14 @@ footer .wp-block-column p {
 	}
 }
 
+@media (max-width: 782px) {
+	.wyrd-store-split,
+	.wyrd-store-info {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}
+
 /** kontakt */
 .wyrd-contact-hero {
 	padding: 40px 24px;
